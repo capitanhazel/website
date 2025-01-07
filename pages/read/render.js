@@ -5,12 +5,7 @@ import { Entry } from "../../database/database.js";
 this script loads markdown files into a single html page
 for quick  reading of content without having to load URL's
 
-NOTE: 
-this script uses the database to read file metadata & render
-
 ===================================================== */
-
-
 
 const container = document.querySelector('div.page');                     // the html target container to append content to
 
@@ -21,7 +16,7 @@ class Page
         this.content = document.createElement('div');                     // create the element
         this.content.classList.add('content');                            // add a class for styling
 
-        
+
         this.database = new Entry(this.path);                             // creates a new database instance
                                                                         
                                      
@@ -52,9 +47,7 @@ class Page
     }
 }
 
-const page = new Page('/docs/lorem.md');
-
-
+const page = new Page('/posts/lorem.md');
 
 /* ----------------------------------------------
     
@@ -79,11 +72,8 @@ const page = new Page('/docs/lorem.md');
 ---------------------------------------------- */
 
 const test = document.createElement('div');
-test.innerText = JSON.stringify(page.database.file, null, 2)
+test.innerText = JSON.stringify(page.database.file.name, null, 2)
 container.appendChild(test);
-
-
-
 
 
 
