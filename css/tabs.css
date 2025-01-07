@@ -1,0 +1,15 @@
+div.tab
+{
+    text-align: center;
+    min-width: 100px;
+}
+div.tabs-container
+{
+    display: flex;
+    background-color: transparent;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}

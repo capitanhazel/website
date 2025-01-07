@@ -1,0 +1,27 @@
+[
+    {
+        "file": 
+        {
+            "path": "/docs/lorem.md",
+            "name": "lorem.md"
+        },
+        "time":
+        {
+            "created": "2024-12-30T08:55",
+            "modified": "2024-12-30T08:55"
+        },
+        "properties":
+        {
+            "title": "Title!",
+            "tags": [ "Mental health", "Tag" ]
+        }
+    },
+    {
+        "path": "/docs/lorem.md",
+        "name": "lorem.md",
+        "created": "2024-12-30T08:55",
+        "modified": "2024-12-30T08:55",
+        "title": "Title!",
+        "tags": [ "Mental health", "tag" ]
+    }
+]

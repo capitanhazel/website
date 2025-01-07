@@ -1,0 +1,65 @@
+div.widget:hover
+{
+    background-color: var(--background-hover);
+    border-radius: 10px;
+    cursor: pointer;
+    --icon-color: var(--color-base);
+}
+div.widget::before
+{
+    content: " ";
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	margin: 0.5em;
+	font-size: 1em;
+    vertical-align: middle;
+    /* opacity: .8; */
+    background-color: var(--icon-color);
+	-webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+div.widget[data-widget-id="layout"]::before
+{
+    -webkit-mask-image: var(--layout-icon);
+    mask-image: var(--layout-icon);
+}
+div.widget[data-widget-id="explore"]::before
+{
+    -webkit-mask-image: var(--explore-icon);
+    mask-image: var(--explore-icon);
+}
+div.widget[data-widget-id="share"]::before
+{
+    -webkit-mask-image: var(--share-icon);
+    mask-image: var(--share-icon);
+}
+div.widget[data-widget-id="home"]::before
+{
+    -webkit-mask-image: var(--home-icon);
+    mask-image: var(--home-icon);
+}
+div.widget[data-widget-id="commands"]::before
+{
+    -webkit-mask-image: var(--cmd-icon);
+    mask-image: var(--cmd-icon);
+}
+div.widget[data-widget-id="settings"]::before
+{
+    -webkit-mask-image: var(--cog-icon);
+    mask-image: var(--cog-icon);
+}
+div.widget[data-widget-id="files"]::before
+{
+    -webkit-mask-image: var(--files-icon);
+    mask-image: var(--files-icon);
+}
+div.widget[data-widget-id="search"]::before
+{
+    -webkit-mask-image: var(--search-icon);
+    mask-image: var(--search-icon);
+}

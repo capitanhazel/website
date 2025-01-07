@@ -1,0 +1,50 @@
+:root
+{
+    --font-base: 'JetBrains Mono';
+    --color-accent: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
+    --color-accent-1: hsl(var(--color-accent-h), var(--color-accent-s), calc(var(--color-accent-l) + 10%));
+    --color-accent-2: hsl(var(--color-accent-h), var(--color-accent-s), calc(var(--color-accent-l) + 20%));
+    --color-accent-ghost: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.3);
+    
+    --color-link: var(--color-accent-1);
+    --color-link-hover: var(--color-accent-2);
+    --text-selection-background: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.1);
+    --text-selection-color: hsl(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l));
+}
+@media (prefers-color-scheme: light)
+{
+    :root
+    {
+        --color-base: black;
+        --color-accent-h: 210;
+        --color-accent-s: 90%;
+        --color-accent-l: 60%;
+        --body-background: white;
+        --background-primary: rgb(246, 246, 246);
+        --background-secondary: color-mix(in srgb, var(--background-primary), black 25%);
+        --background-hover: color-mix(in srgb, var(--color-base) 5%, transparent);
+        --background-shadow: color-mix(in srgb, var(--background-primary) 35%, transparent);
+        --sidebar-background: transparent;
+        --icon-color: color-mix(in srgb, var(--color-accent) 50%, var(--background-primary));
+    }
+}
+@media (prefers-color-scheme: dark)
+{
+    :root 
+    {
+        --color-base: white;
+        --icon-color: color-mix(in srgb, var(--color-accent) 50%, var(--background-primary));
+        --body-background: var(--color-accent);
+        
+        --background-primary: rgb(34, 34, 34);
+        --background-secondary: color-mix(in srgb, var(--background-primary), black 25%);
+        --background-hover: color-mix(in srgb, white 5%, transparent);
+        --background-shadow: color-mix(in srgb, var(--background-primary) 35%, transparent);
+        --sidebar-background: transparent;
+
+        --color-accent-h: 50;
+        --color-accent-s: 70%;
+        --color-accent-l: 60%;
+
+    }
+}

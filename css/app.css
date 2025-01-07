@@ -1,0 +1,15 @@
+body
+{
+    --font-size: 15px;
+    font-size: var(--font-size);
+    background-color: var(--body-background);
+    color: var(--color-base);
+    font-family: var(--font-base), sans-serif;
+    padding: 0;
+    margin: 0;
+}
+::selection
+{
+    background-color: var(--text-selection-background);
+    color: var(--text-selection-color);
+}
