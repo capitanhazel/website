@@ -1,17 +1,3 @@
-/*
-
-@info 
-"This script handles the file database"
-
-@class "Entry"
-create a new entry for parsing files here
-
-@example
-const test = new Entry('/docs/lorem.md');
-*/
-
-
-
 const db = 'database.json';
 
 export class Entry
@@ -26,18 +12,19 @@ export class Entry
         this.time = 
         {
             "created": "2024-12-30T08:55",
-            "modified": "2024-12-30T08:55"
+            "modified": "2024-12-30T08:55",
+            "accessed": "2024-12-30T08:55",
         },
         this.properties = 
         {
-            "title": "Title!",
-            "tags": ["Mental health", "Tag"]
+            "title": "",
+            "tags": [],
         }
         this.log();
     }
     read(path)
     {
-
+        
     }
     log()
     {

@@ -10,17 +10,20 @@ this script uses the database to read file metadata & render
 
 ===================================================== */
 
+
+
 const container = document.querySelector('div.page');                     // the html target container to append content to
 
 class Page 
 {
     constructor(path = "") {
         this.path = path;                                                 // the document path to load
-
-        this.database = new Entry(this.path);                             // creates a new database instance
-                                                                        
         this.content = document.createElement('div');                     // create the element
         this.content.classList.add('content');                            // add a class for styling
+
+        
+        this.database = new Entry(this.path);                             // creates a new database instance
+                                                                        
                                      
         this.render();
     }
